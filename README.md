@@ -2,7 +2,7 @@
 
 **Universal Strategic Reasoning Engine — MCTS × LLM = Game Theory for Everything**
 
-Feed any real-world strategic dilemma in plain English. Get back a game-theoretic analysis that would cost $2,000 from McKinsey
+Feed any real-world strategic dilemma in plain English. 
 
 > Describe any strategic scenario in natural language. Get rigorous game-theoretic analysis back.
 
