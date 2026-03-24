@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/EMPEROR---Universal-Game-Theory-Engine/',
   server: {
     proxy: {
       '/api': 'http://localhost:8000',

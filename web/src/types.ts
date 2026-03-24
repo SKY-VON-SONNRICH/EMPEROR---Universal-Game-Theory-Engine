@@ -38,6 +38,7 @@ export interface Config {
   model: string
   reasoning: string   // "standard" | "extended"
   apiKey: string
+  backendUrl: string  // e.g. "https://your-server.com" — leave empty for same-origin
   simulations: number
   maxDepth: number
   maxActions: number
@@ -52,6 +53,7 @@ export const DEFAULT_CONFIG: Config = {
   model: 'claude-opus-4-20250514',
   reasoning: 'standard',
   apiKey: '',
+  backendUrl: '',
   simulations: 40,
   maxDepth: 8,
   maxActions: 7,

@@ -58,6 +58,19 @@ export default function Settings() {
             <div className="text-xs text-gray-600 mt-1">Stored in browser only. Never sent to our servers.</div>
           </Field>
 
+          {/* Backend URL */}
+          <Field label="Backend URL">
+            <input
+              value={draft.backendUrl}
+              onChange={e => update({ backendUrl: e.target.value })}
+              placeholder="https://your-server.com (leave empty for same-origin)"
+              className="w-full bg-gray-800 border border-gray-700 rounded px-2 py-1.5 text-sm focus:outline-none focus:border-blue-600"
+            />
+            <div className="text-xs text-gray-600 mt-1">
+              URL of your Emperor backend. Required when using GitHub Pages.
+            </div>
+          </Field>
+
           {/* Provider */}
           <Field label="Provider">
             <div className="flex gap-2">
