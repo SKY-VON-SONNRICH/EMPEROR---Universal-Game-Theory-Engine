@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+
+body {
+  @apply bg-gray-950 text-gray-100 font-sans;
+  margin: 0;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+
+/* Orbit spinner */
+@keyframes orbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.spinner-orbit {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #3b82f6;
+  border-right-color: #3b82f680;
+  animation: orbit 0.8s linear infinite;
+}
+
+/* Pulse ring */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.pulse-ring {
+  position: absolute;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid #3b82f6;
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+/* Phase text fade */
+@keyframes fade-phase {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.phase-text { animation: fade-phase 2s ease-in-out infinite; }
